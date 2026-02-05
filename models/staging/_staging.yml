@@ -1,0 +1,12 @@
+version: 2
+#This tells dbt where the raw data lives.
+sources:
+  - name: github_raw
+    database: GITHUB_RAW
+    schema: GITHUB_RAW.FIVETRAN
+    tables:
+      - name: repository
+      - name: commit
+      - name: user
+      - name: issue
+      - name: pull_request
